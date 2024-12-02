@@ -20,10 +20,10 @@
                     <div class="logo">
                         <img src="images/logo.png" alt="">
                     </div>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">خدماتنا</a></li>
-                    <li><a href="#">من نحن</a></li>
-                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#cards">لماذا تختارنا</a></li>
+                    <li><a href="#form-section">سجل الان</a></li>
+                    <li><a href="#footer"> الفوتر</a></li>
                 </ul>
             </nav>
         <!-- End Navbar  -->
@@ -39,17 +39,20 @@
 <!-- header & navigation -->
 
 <!-- 2- Cards  -->
- <section class="card-section" id="cards">
-     <h3 class="title">لماذا تختارنا</h3>
-    <div class="cards">
-        <div class="card">
-            <img src="images/goal-1.png" alt="">
-            <h3>مدرسين اكفاء</h3>
-            <p>نمتلك عدة مدرسين ذو خبرة عالية</p>
-        </div>
 
-        <div class="card">
-            <img src="images/goal-2.png" alt="">
+
+<section class="card-section" id="cards">
+        <div class="container">
+        <h3 class="title">لماذا تختارنا</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="images/goal-1.png" alt="">
+                <h3>مدرسين اكفاء</h3>
+                <p>نمتلك عدة مدرسين ذو خبرة عالية</p>
+            </div>
+            
+            <div class="card">
+                <img src="images/goal-2.png" alt="">
             <h3>شهادات معتمدة</h3>
             <p> نقدم لك شهادة معتمدة مختومة من مديرية التربية والتعليم</p>
         </div>
@@ -66,14 +69,18 @@
             <p>لدينا اكثر من 8 افرع في مختلف المدن</p>
         </div>
     </div>
+    </div>
  </section>
 
  <!-- 3- Forms  -->
  <div id="form-section">
-    <form method="post">
-        <div class="group">
-            <label for="">اسم المستخدم</label>
-            <input type="text" placeholder="ادخل اسم المستخدم">
+    <div class="container">
+
+        <form method="post">
+            <h1 style="text-align: center;">قم بالتسجيل الآن</h1>
+            <div class="group">
+                <label for="">اسم المستخدم</label>
+                <input type="text" placeholder="ادخل اسم المستخدم">
         </div>
 
         <div class="group">
@@ -101,11 +108,12 @@
             <button> ارسال الطلب</button>
         </div>
     </form>
- </div>
+</div>
+</div>
  <!-- End Forms  -->
 
  <!-- 4- Footer  -->
-  <footer>
+  <footer id="footer">
     <div class="container">
         <div class="logo">
             <img src="images/logo.png" alt="">
@@ -124,8 +132,8 @@
                 <li> المستوى الدراسي: بكالورويوس</li>
                 <li> الجامعة: جامعة الأقصى</li>
                 <li> اسم المقرر: تصميم وإدارة المواقع الإدارية والتجارية (ويب 1)</li>
-            </div>
-        </ul>
+            </ul>
+        </div>
     </div>
   </footer>
  <script src="js/bootstrap.bundle.min.js"></script>
