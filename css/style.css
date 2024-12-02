@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue !important;
+    direction: rtl;
+}
+ul{
+    list-style: none;
+   margin-bottom: 0px;
+}
+a {
+    text-decoration: none !important;
+}
+
+
+/* Start Navbar */
+header nav , footer{
+    background-color: #219ebc;
+    width: 100%;
+    direction: rtl;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+header li {
+    align-items: center;
+    padding: 20px 5px;
+    height: 100%;
+    /* overflow: hidden; */
+    transition: 0.3s all ease;
+}
+
+header .logo img{
+    max-width: 100px;  
+    height: auto;
+}
+
+
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+/* End Navbar  */
+
+/* Start Banner */
+header {
+    height: 100vh;
+}
+.banner {
+    height: 70vh;
+    background: url(../images/banner8.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 171, 199, 0.6); 
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(3px); 
+}
+
+
+.banner .content {
+    z-index: 2;
+}
+.banner h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.banner p {
+    font-size: 22px;
+    color: #fff;
+}
+/* End Banner */
+
+/*
+     2- cards 
+ */
+
+ .card-section .title {
+    font-size: 48px ;
+    border: 2px solid #219ebc ;
+    background-color: #fff;
+    border-radius: 8px;
+    width: fit-content;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px 30px;
+}
+ .card-section .cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ .cards .card {
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    color: #219ebc;
+    border-radius: 30px 0 30px 30px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0;
+ }
+
+ .cards .card img {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+ }
+ .cards .card h3 {
+    font-size: 22px;
+ }
+
+ /* 3- forms  */
+
+ #form-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#form-section form {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 30px 0 30px 30px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0;
+}
+
+
+#form-section .group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+}
+
+#form-section .group input , select {
+    height: 40px;
+    border: 2px solid #219ebc;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+#form-section button {
+    background-color: #219ebc;
+    width: fit-content;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* end form  */
+
+/* start footer  */
+
+footer {
+    margin-top: 50px;
+    border-top: 2px solid #000000;
+
+}
+footer .container  {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff; 
+}
+footer .container ul li {
+    margin: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #fff;
+}
+footer .container ul a {
+    color: #fff;
+    
+}
+
+footer .logo img{
+    max-width: 300px;  
+    height: auto;
+}
+
+
+/* end footer  */
